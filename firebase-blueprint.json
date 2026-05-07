@@ -1,0 +1,73 @@
+{
+  "entities": {
+    "Student": {
+      "title": "Student Record",
+      "description": "Details of a cadet enrolled in the school",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "srNo": { "type": "string" },
+        "rollNo": { "type": "string" },
+        "applicationNo": { "type": "string" },
+        "studentName": { "type": "string" },
+        "fatherName": { "type": "string" },
+        "className": { "type": "string" },
+        "village": { "type": "string" },
+        "admissionNo": { "type": "string" },
+        "mobileNo": { "type": "string" },
+        "emailId": { "type": "string" },
+        "allocatedSchool": { "type": "string" },
+        "category": { "type": "string" },
+        "allocatedCategory": { "type": "string" },
+        "domicile": { "type": "string" },
+        "totalMarks": { "type": "string" },
+        "admissionStatus": { "type": "string" },
+        "medicalCenter": { "type": "string" },
+        "medicalStatus": { "type": "string" },
+        "docVerification": { "type": "string" },
+        "feesStatus": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "adharCardUrl": { "type": "string" },
+        "parentPhotoUrl": { "type": "string" },
+        "marksheetUrl": { "type": "string" },
+        "domicileCertUrl": { "type": "string" },
+        "casteCertUrl": { "type": "string" },
+        "otherIdUrl": { "type": "string" },
+        "isOneTimePayment": { "type": "boolean" },
+        "isArmyBackground": { "type": "boolean" },
+        "managementDiscountPercent": { "type": "number" },
+        "payments": {
+          "type": "array",
+          "items": { "type": "object" }
+        }
+      },
+      "required": ["id", "studentName", "admissionNo"]
+    },
+    "Payment": {
+      "title": "Payment Record",
+      "description": "Fee payment transaction",
+      "type": "object",
+      "properties": {
+        "receiptNo": { "type": "string" },
+        "studentId": { "type": "string" },
+        "studentName": { "type": "string" },
+        "date": { "type": "string" },
+        "amount": { "type": "number" },
+        "mode": { "type": "string" },
+        "transactionId": { "type": "string" },
+        "bankName": { "type": "string" },
+        "chequeNo": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "students": {
+      "schema": "Student",
+      "description": "Collection of all student records"
+    },
+    "payments": {
+      "schema": "Payment",
+      "description": "Collection of all payment transactions"
+    }
+  }
+}

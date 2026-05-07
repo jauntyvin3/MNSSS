@@ -1,0 +1,82 @@
+export interface StudentRecord {
+  id: number;
+  sn: string;
+  studentName: string;
+  fatherName: string;
+  class: string;
+  village: string;
+  feesReceived: number;
+  officialTotal: number;
+  discount: string;
+}
+
+export const feeData: StudentRecord[] = [
+  { id: 1, sn: '1', studentName: 'Aanya Rajput', fatherName: 'Raju Rajput', class: 'PLAY', village: 'Stadium Ground (near) Kamath Ward', feesReceived: 10800, officialTotal: 21300, discount: 'Special Cash Management Discount' },
+  { id: 2, sn: '2', studentName: 'Aarmbh Kharya', fatherName: 'Shubhansh Kharya', class: 'NURSERY', village: 'Goura Devi Ward Near Patharya Kuan', feesReceived: 21870, officialTotal: 24300, discount: '10% full fees Discount' },
+  { id: 3, sn: '3', studentName: 'Atharv Jain', fatherName: 'Akash Jain', class: 'UKG', village: 'Bos Ward', feesReceived: 27300, officialTotal: 27300, discount: 'Not in source' },
+  { id: 4, sn: '4', studentName: 'Aaradhya Gupta', fatherName: 'Rajesh Kuamr Gupta', class: 'FIFTH', village: 'Azad Ward', feesReceived: 33600, officialTotal: 33600, discount: 'Not in source' },
+  { id: 5, sn: '5', studentName: 'Mayank Lodhi', fatherName: 'Gopal Lodhi', class: 'FIFTH', village: 'Jagrati Nagar', feesReceived: 30240, officialTotal: 33600, discount: '10% full fees paid' },
+  { id: 6, sn: '6', studentName: 'Yuvraj Rai', fatherName: 'Yogesh Rai', class: 'UKG', village: 'Azad Ward', feesReceived: 24570, officialTotal: 27300, discount: '10% full fees paid' },
+  { id: 7, sn: '7', studentName: 'Sarthik Patel', fatherName: 'Hariom Patel', class: 'FIFTH', village: 'Gunji', feesReceived: 30240, officialTotal: 33600, discount: '10% full fees paid' },
+  { id: 8, sn: '8', studentName: 'Vidit Patel', fatherName: 'Yashwant Patel', class: 'SECOND ', village: 'Bos Ward', feesReceived: 27540, officialTotal: 30600, discount: '10% full fees paid' },
+  { id: 9, sn: '9', studentName: 'Soham Jain', fatherName: 'Vivek Kumar', class: 'THIRD', village: 'Nehru Ward', feesReceived: 26440, officialTotal: 31600, discount: '10% full fees + 10% Tuition Sibling Discount' },
+  { id: 10, sn: '10', studentName: 'Somil Jain', fatherName: 'Vivek Kumar', class: 'FIFTH', village: 'Nehru Ward', feesReceived: 28040, officialTotal: 33600, discount: '10% full fees + 10% Tuition Fees' },
+  { id: 11, sn: '11', studentName: 'Vidhan Singh Chadar', fatherName: 'Manmohan Singh', class: 'THIRD', village: 'Manegaov Tiraha Gundrai Khurd', feesReceived: 25600, officialTotal: 31600, discount: '1 Installment Discount Management Kota' },
+  { id: 12, sn: '12', studentName: 'Anushri Choubey', fatherName: 'Jitendra Choubey', class: 'SECOND ', village: 'Goura Devi Ward', feesReceived: 27540, officialTotal: 30600, discount: '10% full fees paid' },
+  { id: 13, sn: '13', studentName: 'Arna Rai', fatherName: 'Neelesh', class: 'SECOND ', village: 'Azad Ward', feesReceived: 26590, officialTotal: 30600, discount: '10% total fees + 5% tuition fees' },
+  { id: 14, sn: '14', studentName: 'Arnav Rai', fatherName: 'Neelesh', class: 'SECOND ', village: 'Azad Ward', feesReceived: 26590, officialTotal: 30600, discount: '10% total fees + 5% tuition fees' },
+  { id: 15, sn: '15', studentName: 'Agrima Patel', fatherName: 'Satendra Patel', class: 'NURSERY', village: 'Hardoul Ward', feesReceived: 22300, officialTotal: 24300, discount: '2,000 Special Cash Discount' },
+  { id: 16, sn: '16', studentName: 'Atharv Patel', fatherName: 'Kapil Patel', class: 'FIRST', village: 'Hardoul Ward', feesReceived: 26955, officialTotal: 29600, discount: '2,645 Special Cash Discount' },
+  { id: 17, sn: '17', studentName: 'Ratharv Sharma', fatherName: 'Manish', class: 'UKG', village: 'Hardol Ward', feesReceived: 27300, officialTotal: 27300, discount: 'Not in source' },
+  { id: 18, sn: '18', studentName: 'Aaryaman Patel', fatherName: 'Abhishek', class: 'LKG', village: 'Bareli', feesReceived: 26300, officialTotal: 26300, discount: 'Not in source' },
+  { id: 19, sn: '19', studentName: 'Akshat Patel', fatherName: 'Rishiraj', class: 'LKG', village: 'Bhainsa', feesReceived: 21600, officialTotal: 26300, discount: 'Not in source' },
+  { id: 20, sn: '20', studentName: 'Ved Patel', fatherName: 'Omprakash', class: 'LKG', village: 'Bhainsa', feesReceived: 26400, officialTotal: 26300, discount: '100 Extra' },
+  { id: 21, sn: '21', studentName: 'Mannat Patel', fatherName: 'Dharmendra Patel', class: 'UKG', village: 'Rudra Ward', feesReceived: 27585, officialTotal: 27300, discount: '285 Extra' },
+  { id: 22, sn: '22', studentName: 'Aaradhya Patel', fatherName: 'Arvind Patel', class: 'FOURTH', village: 'Rudra Ward', feesReceived: 31995, officialTotal: 32600, discount: '5% Tuition Fees Discount & 445 Rupay Extra' },
+  { id: 23, sn: '23', studentName: 'Aarush Patel', fatherName: 'Arvind', class: 'THIRD', village: 'Rudra Ward', feesReceived: 30720, officialTotal: 31600, discount: '5% Tuition Fees discount & 120 Rupay Extra' },
+  { id: 24, sn: '24', studentName: 'Kashvi Jain', fatherName: 'Prasann Jain', class: 'THIRD', village: 'Hardoul Ward', feesReceived: 25000, officialTotal: 31600, discount: '10% + Management Kota' },
+  { id: 25, sn: '25', studentName: 'Rudra Lodhi', fatherName: 'Rajendra', class: 'SECOND ', village: 'Near Sudhashree School', feesReceived: 26590, officialTotal: 30600, discount: '10% total fees + 5% tuition fees' },
+  { id: 26, sn: '26', studentName: 'Samrat Chadar', fatherName: 'Manoj Chadar', class: 'FIFTH', village: 'Muar', feesReceived: 32500, officialTotal: 33600, discount: '5% Tuition Fees' },
+  { id: 27, sn: '27', studentName: 'Ishita Singh Chadar', fatherName: 'Manoj Chadar', class: 'FIRST', village: 'Muar', feesReceived: 28700, officialTotal: 29600, discount: '5% Tuition Fees' },
+  { id: 28, sn: '28', studentName: 'Aaradhya Patel', fatherName: 'Anant Narayan Patel', class: 'FIFTH', village: 'Murdai', feesReceived: 33600, officialTotal: 33600, discount: 'Not in source' },
+  { id: 29, sn: '29', studentName: 'Yagya Patel', fatherName: 'Hemant Patel', class: 'LKG', village: 'Khobi', feesReceived: 26300, officialTotal: 26300, discount: 'Not in source' },
+  { id: 30, sn: '30', studentName: 'Arham Jain', fatherName: 'Vivek Kumar', class: 'FOURTH', village: 'Nehru Ward', feesReceived: 25000, officialTotal: 32600, discount: '10% + Special Discount Management' },
+  { id: 31, sn: '31', studentName: 'Virat Singh Rajput', fatherName: 'Vikendra', class: 'FOURTH', village: 'Kumhdakheda', feesReceived: 32600, officialTotal: 32600, discount: 'Not in source' },
+  { id: 32, sn: '32', studentName: 'Kushvardhan Singh Patel', fatherName: 'Rajendra Patel', class: 'PLAY', village: 'Khobi', feesReceived: 10800, officialTotal: 21300, discount: 'Special Cash Management Discount' },
+  { id: 33, sn: '33', studentName: 'Divyansh Lodhi', fatherName: 'Tularam', class: 'FIFTH', village: 'Near teela, Murlidhar Ward', feesReceived: 33600, officialTotal: 33600, discount: 'Not in source' },
+  { id: 34, sn: '34', studentName: 'Anshul Ladiya', fatherName: 'Narayan', class: 'UKG', village: 'Lathgaon Chowk', feesReceived: 27300, officialTotal: 27300, discount: 'Not in source' },
+  { id: 35, sn: '35', studentName: 'Shashwat Shukla', fatherName: 'Vikas', class: 'UKG', village: 'Hardoul Ward', feesReceived: 24570, officialTotal: 27300, discount: '10% full fees paid' },
+  { id: 36, sn: '36', studentName: 'Abhay Pratap Singh Rajput', fatherName: 'Sanjay', class: 'LKG', village: 'Shastri Ward', feesReceived: 22870, officialTotal: 26300, discount: '10% full fees + 5% Tuition Fees' },
+  { id: 37, sn: '37', studentName: 'Harsh Gupta', fatherName: 'Abhishek', class: 'FOURTH', village: 'Azad Ward', feesReceived: 29340, officialTotal: 32600, discount: '10% discount full fees paid' },
+  { id: 38, sn: '38', studentName: 'Rudra Pratap Singh Rajput', fatherName: 'Sanjay', class: 'THIRD', village: 'Gora Devi Ward Gotegaon', feesReceived: 27440, officialTotal: 31600, discount: '10% full fees + 5% Tuition Fees' },
+  { id: 39, sn: '39', studentName: 'Isaan Choursia', fatherName: 'Abhishek', class: 'FIFTH', village: 'Siddheshwer Colony', feesReceived: 33600, officialTotal: 33600, discount: 'Not in source' },
+  { id: 40, sn: '40', studentName: 'Manvi Patel', fatherName: 'Shubham', class: 'UKG', village: 'Kumhdakheda', feesReceived: 27300, officialTotal: 27300, discount: 'Not in source' },
+  { id: 41, sn: '41', studentName: 'Pranav Parashar', fatherName: 'Ashutosh', class: 'THIRD', village: 'Kanjai', feesReceived: 26440, officialTotal: 31600, discount: '10% full fees + 10% Tuition fees' },
+  { id: 42, sn: '42', studentName: 'Pranjal Parshar', fatherName: 'Ashutosh', class: 'LKG', village: 'Kanjai', feesReceived: 22070, officialTotal: 26300, discount: '10% full fees + 10% Tuition Fees' },
+  { id: 43, sn: '43', studentName: 'Siddharth Singh Patel', fatherName: 'Raja Bhaiya', class: 'FIRST', village: 'Kumjhor', feesReceived: 29600, officialTotal: 29600, discount: 'Not in source' },
+  { id: 44, sn: '44', studentName: 'Shivay Patel', fatherName: 'Rajesh Patel', class: 'NURSERY', village: 'Manakwara', feesReceived: 24300, officialTotal: 24300, discount: 'Not in source' },
+  { id: 45, sn: '45', studentName: 'Abhiraj Lodhi', fatherName: 'Rajendra Singh', class: 'NURSERY', village: 'Near Bypass', feesReceived: 21120, officialTotal: 24300, discount: '10% full fees + 5% tuition fees' },
+  { id: 46, sn: '46', studentName: 'Shreshth Tiwari', fatherName: 'Narendra', class: 'FIFTH', village: 'Bandol post Simariya', feesReceived: 30240, officialTotal: 33600, discount: '10% full fees paid' },
+  { id: 47, sn: '47', studentName: 'Aryan Patel', fatherName: 'Jitendra', class: 'FOURTH', village: 'Hardoul Ward', feesReceived: 32600, officialTotal: 32600, discount: 'Not in source' },
+  { id: 48, sn: '48', studentName: 'Rudransh Patel', fatherName: 'Rajendra', class: 'FIFTH', village: 'Hardoul Ward', feesReceived: 33600, officialTotal: 33600, discount: 'Not in source' },
+  { id: 49, sn: '49', studentName: 'Aanshi Patel', fatherName: 'Sateesh', class: 'SECOND ', village: 'Bareli', feesReceived: 30600, officialTotal: 30600, discount: 'Not in source' },
+  { id: 50, sn: '50', studentName: 'Vedansh Patel', fatherName: 'Virendra Patel', class: 'UKG', village: 'Not in source', feesReceived: 24570, officialTotal: 27300, discount: '10% discount full fees Paid' },
+  { id: 51, sn: '51', studentName: 'Deekshansh Upadhyay', fatherName: 'Abhineet Upadhyay', class: 'SECOND ', village: 'Not in source', feesReceived: 21420, officialTotal: 30600, discount: '20% Discount for staff Child + 10% full fees paid' },
+  { id: 52, sn: '52', studentName: 'Jayesh Patel', fatherName: 'Dharmendra Patel', class: 'NURSERY', village: 'Gadaghat post Sarra', feesReceived: 21870, officialTotal: 24300, discount: '10% discount full fees paid' },
+  { id: 53, sn: '53', studentName: 'Daivik Patel', fatherName: 'Divyanshu Patel', class: 'NURSERY', village: 'Near Bandhan Bank New bus stand gotegaon', feesReceived: 24300, officialTotal: 24300, discount: 'Not in source' },
+  { id: 54, sn: '54', studentName: 'Mayank Patel', fatherName: 'Nitesh Patel', class: 'FIFTH', village: 'Patharya Kuan', feesReceived: 33600, officialTotal: 33600, discount: 'Not in source' },
+  { id: 55, sn: '57', studentName: 'Shivika Patel', fatherName: 'Arpit Patel', class: 'NURSERY', village: 'Bareli', feesReceived: 24300, officialTotal: 24300, discount: 'Not in source' },
+  { id: 56, sn: '55', studentName: 'Devansh Patel', fatherName: 'Kheer Sagar Patel', class: 'FOURTH', village: 'Khobi', feesReceived: 29340, officialTotal: 32600, discount: '10% full fees paid' },
+  { id: 57, sn: '56', studentName: 'Dishank Rajak', fatherName: 'Shashank Kumar', class: 'LKG', village: 'Near panchayati jain mandir bajrang ward', feesReceived: 23670, officialTotal: 26300, discount: '10% full fees paid' },
+  { id: 58, sn: '58', studentName: 'Shivay Kurmi', fatherName: 'Arvind kumar Kurmi', class: 'NURSERY', village: 'Gadaghat post surra', feesReceived: 21870, officialTotal: 24300, discount: '10% full fees paid' },
+  { id: 59, sn: '59', studentName: 'Rudransh Patel', fatherName: 'Dharmendra Patel', class: 'NURSERY', village: 'Imaliya', feesReceived: 21870, officialTotal: 24300, discount: '10% full fees paid' },
+  { id: 60, sn: '60', studentName: 'Naivedya Patel', fatherName: 'Manish Patel', class: 'SECOND ', village: 'Ramniwaree Bareli', feesReceived: 30600, officialTotal: 30600, discount: 'Not in source' },
+  { id: 61, sn: '61', studentName: 'Rudra Patel', fatherName: 'Rajkishor', class: 'FIRST', village: 'Gadaghat', feesReceived: 29600, officialTotal: 29600, discount: 'Not in source' },
+  { id: 62, sn: '62', studentName: 'Tanishk Shrivastava', fatherName: 'Nitin Shrivastava', class: 'LKG', village: 'Kamath Ward', feesReceived: 26300, officialTotal: 26300, discount: 'Not in source' },
+  { id: 63, sn: '63', studentName: 'Aarin Fatima', fatherName: 'Imran Khan', class: 'LKG', village: 'Patharya Kuan', feesReceived: 26300, officialTotal: 26300, discount: 'Not in source' },
+  { id: 64, sn: '64', studentName: 'Atharv Patel', fatherName: 'Subodh Patel', class: 'SECOND ', village: 'Rudra Ward', feesReceived: 30600, officialTotal: 30600, discount: 'Not in source' },
+  { id: 65, sn: '65', studentName: 'Shivansh Lodhi', fatherName: 'Dharam Singh Lodhi', class: 'FIFTH', village: 'Khobi', feesReceived: 33600, officialTotal: 33600, discount: 'Not in source' },
+  { id: 66, sn: '66', studentName: 'Ravi Rai', fatherName: 'Yogesh Rai', class: 'PLAY', village: 'Azad Ward', feesReceived: 19850, officialTotal: 21300, discount: '5% discount on tuition fees & 5% discount tuition fees class UKG' },
+  { id: 67, sn: '67', studentName: 'Abhiraj Patel', fatherName: 'Rajesh Kumar Patel', class: 'SECOND ', village: 'Poniya', feesReceived: 27540, officialTotal: 30600, discount: '10% Discount full fees paid' },
+  { id: 68, sn: '68', studentName: 'Shivansh Kachhi', fatherName: 'Durgesh Kumar Kachhi', class: 'SECOND ', village: 'Musran Pipariya', feesReceived: 26900, officialTotal: 30600, discount: '3,700 Discount Management' }
+];
